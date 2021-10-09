@@ -285,10 +285,6 @@ if __name__ == "__main__":
         print('Total Reward: ', total_reward)
     else:
         agent = PDAgent()
-        # Hill Climbing search can solve this case.
-        # agent = PDAgent(w1=np.array([0.0111, 0.0909, 0.0688, 0.189]), b1=np.array([0.0456]))
-        # Hill Climbing search cannot solve this case, but sideway move limit at 10 will solve this.
-        # agent = PDAgent(w1=np.array([0.0155, 0.0946, 0.0225, 0.0975]), b1=np.array([-0.0628]))
         initial_reward = simulate(env, [agent])[0]
         print('Initial:    ', agent, ' --> ', f'{initial_reward:.5}')
         # agent, history = hillclimb(env, agent)
