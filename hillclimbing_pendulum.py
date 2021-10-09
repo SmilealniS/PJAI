@@ -11,6 +11,13 @@ Project topic: Solving OpenAI's Gym Classic environments using Hill-climbing sea
 - Arcobat-v1
 - MountainCar-v0
 - Pendulum-v0
+
+Credits:
+The original code: Aj.Thanapon Noraset and implemented by Mr.Komsan Kongwongsupank and Miss Anyamanee Amatyakul
+Environment: OpenAI gym
+Hill-Climbing Search Sideway and Random-Restart Algorithm: Mr.Komsan Kongwongsupank and Miss Anyamanee Amatyakul
+Description and Testing: Mr.Kasidis Chokphaiboon and Miss Cholravee Kittimethee
+
 """
 
 
