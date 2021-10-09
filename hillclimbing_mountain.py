@@ -205,6 +205,7 @@ def hillclimb_restart(env, agent):
     best_reward = max(rewards)
     for __ in range(30):
         cur_agent = MTAgent()
+        env.reset()
         temp_agent, history = hillclimb_sideway(env, cur_agent)
         reward = max(history)
         if best_reward < reward:
