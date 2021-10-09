@@ -199,13 +199,14 @@ def hillclimb_sideway(env, agent, max_iters=10000, sideway_limit=10):
 
 def hillclimb_restart(env, agent):
     """Run a hill-climbing search, and return the final agent."""
-    best_agent = agent
-    best_reward = float('-inf')
+    best_agent, rewards = hillclimb_sideway(env, agent)
+    best_reward = max(rewards)
     for __ in range(30):
-        cur_agent, history = hillclimb_sideway(env, best_agent)
+        cur_agent = CPAgent()
+        temp_agent, history = hillclimb_sideway(env, cur_agent)
         reward = max(history)
         if best_reward < reward:
-            best_agent = cur_agent
+            best_agent = temp_agent
             best_reward = reward
                 
     return best_agent, history
