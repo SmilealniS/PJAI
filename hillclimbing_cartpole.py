@@ -18,8 +18,6 @@ Project topic: Solving OpenAI's Gym Classic environments using Hill-climbing sea
 import sys
 
 import numpy as np
-from numpy.core.fromnumeric import argmax
-from numpy.random.mtrand import random
 import gym
 
 
